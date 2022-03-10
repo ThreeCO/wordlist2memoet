@@ -1,3 +1,7 @@
+"""
+   FORKED FROM https://github.com/mfz/wordlist2anki 
+   SCRIPT IS CREATING FLASH CARDS FOR https://github.com/memoetapp/memoet
+"""
 import bs4
 import requests
 import json
