@@ -59,9 +59,9 @@ if __name__ == '__main__':
             word, pos, definition, description, wordfamily = worddef(word)
 
             # WRITE FLASH CARDS AS SHOULD BE "NORMAL"
-            f.write("{word},,,Flash card,,,,,,,({pos}) **{definition}**\n".format(word = word, definition = definition, pos = pos))
+            f.write('"{word}",,,Flash card,,,,,,,"({pos}) **{definition}**"\n'.format(word = word, definition = definition, pos = pos))
             # WRITE FLASH CARDS "REVERSE"
-            f.write("({pos}) {definition},,,Flash card,,,,,,,{word}\n".format(word = word, definition = definition, pos = pos))
+            f.write('"({pos}) {definition}",,,Flash card,,,,,,,"{word}"\n'.format(word = word, definition = definition, pos = pos))
         except:
             print("--- ERROR --- The word '{word}' could not be fetched!".format(word = word))
         cnt = cnt + 1
